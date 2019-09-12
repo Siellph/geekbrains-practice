@@ -1,0 +1,76 @@
+body {
+    position: relative;
+}
+
+.one {
+    width: 150px;
+    min-height: 200px;
+    border: 1px solid #000;
+    background-color: blue;
+    position: absolute;
+}
+
+.two {
+    width: 150px;
+    min-height: 200px;
+    border: 1px solid #000;
+    background-color: red;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.three {
+    width: 150px;
+    min-height: 200px;
+    border: 1px solid #000;
+    background-color: orange;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.four {
+    width: 150px;
+    min-height: 200px;
+    border: 1px solid #000;
+    background-color: darkturquoise;
+    position: absolute;
+    top: 75px;
+    left: 75px;
+}
+
+.five {
+    width: 150px;
+    min-height: 200px;
+    border: 1px solid #000;
+    background-color: saddlebrown;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.one:hover {
+    z-index: 5;
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+.two:hover {
+    z-index: 5;
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+.three:hover {
+    z-index: 5;
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+.four:hover {
+    z-index: 5;
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+.five:hover {
+    z-index: 5;
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
