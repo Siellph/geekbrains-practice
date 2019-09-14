@@ -3,12 +3,14 @@ body {
     padding: 0;
     font-family: Arial;
 }
+
 .clearfix:after {
     content: "";
     width: 100%;
     display: block;
     clear: both;
 }
+
 .container {
     width: 1280px;
     margin: 0 auto;
@@ -61,7 +63,7 @@ body {
     content: "";
     width: 25px;
     height: 19px;
-    background-image: url(img/check_icon.png);
+    background-image: url(../img/check_icon.png);
     -webkit-background-size: cover;
     background-size: cover;
     display: block;
@@ -154,7 +156,7 @@ body {
     width: 32px;
     height: 32px;
     background-color: #445161;
-    background-image: url(img/li-icon.png);
+    background-image: url(../img/li-icon.png);
     background-position: center;
     background-repeat: no-repeat;
     display: block;
@@ -187,12 +189,14 @@ body {
 .screenshot-desc:nth-child(2n) {
     margin-right: 26px;
 }
+
 .screenshot-desc:nth-last-child(-n+2) {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
+
 .screenshot-img {
     display: block;
-    float: left; 
+    float: left;
 }
 
 summary:focus {
@@ -233,9 +237,181 @@ summary:hover {
     text-align: justify;
     display: inline-block;
 }
+
 .reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
     box-sizing: border-box;
     background-color: #f5f5f5;
     padding: 50px;
+}
+
+.reviews-name {
+    display: block;
+    width: 100%;
+    margin: 0 0 35px 0;
+}
+
+.reviews-comment {
+    width: 574px;
+    clear: both;
+    margin: 0 0 24px 0;
+}
+
+.reviews-comment:nth-last-child(-n+2) {
+    margin-bottom: 0;
+}
+
+.reviews-avatar {
+    width: 75px;
+    height: 75px;
+    background-color: #445161;
+    float: left;
+    border-radius: 100%;
+    clear: both;
+}
+
+.reviews-back {
+    display: inline-block;
+    width: 473px;
+    background-color: #ebebeb;
+    border-radius: 10px;
+    float: right;
+    position: relative;
+}
+
+.reviews-back:before {
+    content: "";
+    position: absolute;
+    float: left;
+    left: -20px;
+    top: 26px;
+    border: 10px solid transparent;
+    border-right: 10px solid #ebebeb;
+}
+
+.reviews-comment-text {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    font-style: italic;
+    width: 436px;
+    text-align: justify;
+    margin: 0;
+    padding: 16px 20px 15px 17px;
+}
+
+.reviews-adress {
+    display: block;
+    color: #989898;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    padding: 0 0 16px 17px;
+}
+
+.buy {
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.group-buy-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.buy-card {
+    width: 300px;
+    border-radius: 10px;
+    background-color: #445162;
+    clear: both;
+    padding: 0 0 20px 0;
+}
+
+.buy-card-name {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    padding: 20px;
+}
+
+.price {
+    display: block;
+    width: 99%;
+    box-sizing: border-box;
+    color: #445162;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    padding: 20px;
+    margin: 0 0 20px 0;
+    background-color: #fff;
+    margin: auto;
+}
+
+.list-buy {
+    list-style-position: inside;
+    margin: 20px 0 20px 20px;
+    padding: 0;
+}
+
+.list-buy-advant {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.button-buy {
+    display: block;
+    width: 260px;
+    text-align: center;
+    margin: auto;
+    padding: 14px;
+    background-color: #fff;
+    text-decoration: none;
+    color: #445161;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.button-buy:hover {
+    -webkit-box-shadow: 4px 4px 4px 0 #323332;
+    box-shadow: 4px 4px 4px 0 #323332;
+}
+
+.button-buy:active {
+    -webkit-box-shadow: inset 4px 4px 4px 0 #323332;
+    box-shadow: inset 4px 4px 4px 0 #323332;
+}
+
+.main-footer {
+    background-color: #445162;
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.footer-name {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    margin: 0;
 }
