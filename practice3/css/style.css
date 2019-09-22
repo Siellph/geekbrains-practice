@@ -1,3 +1,39 @@
+@font-face {
+  font-family: 'Montserrat-UltraLight';
+  src: url('../font/Montserrat/Montserrat-ExtraLight.ttf');
+}
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: url('../font/Montserrat/Montserrat-Light.ttf');
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../font/Montserrat/Montserrat-Regular.ttf');
+}
+@font-face {
+  font-family: 'Raleway-ExtraBold';
+  src: url('../font/Raleway/Raleway-ExtraBold.ttf');
+}
+@font-face {
+  font-family: 'Raleway-SemiBold';
+  src: url('../font/Raleway/Raleway-SemiBold.ttf');
+}
+@font-face {
+  font-family: 'Raleway-Bold';
+  src: url('../font/Raleway/Raleway-Bold.ttf');
+}
+@font-face {
+  font-family: 'Raleway-Medium';
+  src: url('../font/Raleway/Raleway-Medium.ttf');
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url('../font/Raleway/Raleway-Regular.ttf');
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../font/Roboto/Roboto-Regular.ttf');
+}
 body {
   margin: 0;
   padding: 0;
@@ -25,6 +61,7 @@ body {
 .logo {
   width: 181px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 .logo-icon {
@@ -39,13 +76,14 @@ body {
   cursor: pointer;
 }
 .logo-name {
-  margin: 0;
-  color: #fff;
-  font-family: Arial;
-  font-size: 24px;
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 34px;
   font-weight: 100;
   letter-spacing: -1.36px;
-  text-transform: uppercase;
+  margin: 0;
+  color: #fff;
+  text-transform: capitalize;
   text-decoration: none;
 }
 .link-home:hover {
@@ -69,13 +107,13 @@ body {
 }
 .menu-data {
   color: #fff;
-  font-family: Arial;
+  font-family: 'Montserrat';
   font-size: 14px;
   font-weight: 300;
   text-transform: capitalize;
 }
 .menu-data:hover {
-  color: #555555;
+  color: #c7b299;
 }
 .menu-data:active {
   color: #fff;
@@ -90,7 +128,7 @@ body {
   padding: 30px 0;
 }
 .icon-cart:hover {
-  fill: #555555;
+  fill: #c7b299;
   cursor: pointer;
 }
 .icon-cart:active {
@@ -98,7 +136,7 @@ body {
   cursor: pointer;
 }
 .icon-search:hover {
-  fill: #555555;
+  fill: #c7b299;
   cursor: pointer;
 }
 .icon-search:active {
@@ -136,22 +174,22 @@ body {
   fill: #d1bfab;
 }
 .slide-name {
-  color: #ffffff;
-  font-family: Raleway;
+  color: #fff;
+  font-family: 'Raleway';
   font-size: 36px;
   font-weight: 500;
   margin: 0 0 14px 0;
 }
 .slide-title {
-  color: #ffffff;
-  font-family: "Raleway - Extra Bold";
+  color: #fff;
+  font-family: "Raleway-ExtraBold";
   font-size: 52px;
   font-weight: 400;
   margin: 0 0 19px 0;
 }
 .slide-text {
-  color: #ffffff;
-  font-family: Montserrat;
+  color: #fff;
+  font-family: 'Montserrat';
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
@@ -159,8 +197,8 @@ body {
 }
 .get-started {
   text-decoration: none;
-  color: #ffffff;
-  font-family: "Raleway - Extra Bold";
+  color: #fff;
+  font-family: "Raleway-ExtraBold";
   font-size: 14px;
   font-weight: 400;
   line-height: 23px;
