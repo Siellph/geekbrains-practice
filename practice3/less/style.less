@@ -1,0 +1,246 @@
+@width: 1920px;
+@color: #555555;
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: @width;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.main-header {
+    width: 100%;
+    padding: 40px 150px;
+    box-sizing: border-box;
+    background-image: url(../img/head-back.jpg);
+    background-repeat: no-repeat;
+    background-color: black;
+    box-shadow: 0 0 0 600px rgba(0, 0, 0, 0.66) inset;
+}
+
+.control-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.logo {
+    width: 181px;
+    display: flex;
+    align-items: center;
+
+    &-icon {
+        fill: #fff;
+    }
+
+    &-icon:hover {
+        fill: @color;
+        cursor: pointer;
+    }
+
+    &-icon:active {
+        fill: #fff;
+        cursor: pointer;
+    }
+}
+
+.logo-name {
+    margin: 0;
+    color: #fff;
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: 100;
+    letter-spacing: -1.36px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.link-home:hover {
+    color: @color;
+}
+
+.menu {
+    display: flex;
+    width: 770px;
+
+    &-list {
+        width: 637px;
+        margin: 0 63px 0 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+
+    &-link {
+        text-decoration: none;
+        padding: 35px 0;
+    }
+
+    &-data {
+        color: #fff;
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: 300;
+        text-transform: capitalize;
+    }
+
+    &-data:hover {
+        color: @color;
+    }
+
+    &-data:active {
+        color: #fff;
+    }
+}
+
+.icon-cart {
+    fill: #fff;
+    margin: 0 28px 0 0;
+    padding: 30px 0;
+}
+
+.icon-search {
+    fill: #fff;
+    padding: 30px 0;
+}
+
+.icon-cart:hover {
+    fill: @color;
+    cursor: pointer;
+}
+
+.icon-cart:active {
+    fill: #fff;
+    cursor: pointer;
+}
+
+.icon-search:hover {
+    fill: @color;
+    cursor: pointer;
+}
+
+.icon-search:active {
+    fill: #fff;
+    cursor: pointer;
+}
+
+.slide {
+    max-width: 590px;
+    margin: 285px 516px 0 516px;
+    text-align: center;
+    position: relative;
+}
+
+.left-button {
+    position: absolute;
+    top: 94px;
+    left: -475px;
+    fill: #d1bfab;
+}
+
+.right-button {
+    position: absolute;
+    top: 94px;
+    right: -475px;
+    fill: #d1bfab;
+}
+
+.left-button:hover {
+    fill: #555555;
+}
+
+.right-button:hover {
+    fill: #555555;
+}
+
+.left-button:active {
+    fill: #d1bfab;
+}
+
+.right-button:active {
+    fill: #d1bfab;
+}
+
+.slide-name {
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0 0 14px 0;
+}
+
+.slide-title {
+    color: #ffffff;
+    font-family: "Raleway - Extra Bold";
+    font-size: 52px;
+    font-weight: 400;
+    margin: 0 0 19px 0;
+}
+
+.slide-text {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 0 0 52px 0;
+}
+
+.get-started {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Raleway - Extra Bold";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    text-transform: uppercase;
+    padding: 26px 85px;
+    border-radius: 3px;
+    background-color: #998675;
+
+}
+
+.get-started:hover {
+    background-color: #111111;
+}
+
+.get-started:active {
+    background-color: #998675;
+}
+
+.pagination {
+    width: 98px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 305px 759px 0 759px;
+}
+
+.circle {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #918f8e;
+}
+.circle:hover {
+    background-color: #26252a;
+}
+.circle:active {
+    background-color: #918f8e;
+}
+.circle-active {
+    display: inline-block;
+        width: 11px;
+    height: 11px;
+    border: 4px solid #b5a695;
+    border-radius: 50%;
+    background-color: #26252a;
+}
