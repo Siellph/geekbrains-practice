@@ -90,29 +90,42 @@ body {
 }
 
 .logo {
-    width: 181px;
+    width: 185px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-decoration: none;
 
     &-icon {
         fill: #fff;
     }
 
-    &-icon:hover {
-        fill: #c7b299;
-        cursor: pointer;
+    &-name {
+        .text-style('Raleway', 34px, 100, '@height', -1.36px, #fff, capitalize, none);
+        margin: 0;
     }
 
-    &-icon:active {
-        fill: #fff;
-        cursor: pointer;
-    }
 }
 
-.logo-name {
-    .text-style('Raleway', 34px, 100, '@height', -1.36px, #fff, capitalize, none);
-    margin: 0;
+.logo:hover .logo-name {
+    color: #c7b299;
+}
+
+.logo:hover .logo-icon {
+    fill: #C7B299;
+}
+
+.logo:active .logo-name {
+    color: #fff;
+}
+
+.logo:active .logo-icon {
+    fill: #fff;
+}
+
+.link-home {
+    display: block;
+    text-decoration: none;
 }
 
 .menu {
@@ -246,37 +259,32 @@ body {
 }
 
 .pagination {
-    width: 98px;
+    width: 150px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 305px 759px 0 759px;
+    margin: 305px auto 0;
 }
 
 .circle {
     display: inline-block;
     width: 11px;
     height: 11px;
+    border: 4px solid transparent;
     border-radius: 50%;
-    background-color: #918f8e;
+    background-color: #999898;
 }
 
 .circle:hover {
-    background-color: #26252a;
+    border: 4px solid #d3c1ad;
+    background-color: transparent;
+    transform: scale(1.5);
 }
 
 .circle:active {
-    background-color: #918f8e;
-}
-
-.circle-active {
-    display: inline-block;
-    width: 11px;
-    height: 11px;
-    border: 4px solid #b5a695;
-    border-radius: 50%;
-    background-color: #26252a;
+    border: 4px solid transparent;
+    background-color: #999898;
 }
 
 .services {
@@ -287,10 +295,24 @@ body {
     background-color: #fff;
     margin: 80px 375px;
 
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:active {
+        cursor: pointer;
+
+    }
+
     &-cart {
         display: inline-block;
         width: 266px;
         text-align: center;
+    }
+
+    &-button {
+        border: none;
+        background-color: transparent;
     }
 
     &-icon {
@@ -298,27 +320,9 @@ body {
         margin: 0 0 30px 0;
     }
 
-    &-icon:hover {
-        fill: #c7b299;
-    }
-
-    &-icon:active {
-        fill: #555555;
-    }
-
     &-title {
         .text-style('Raleway-SemiBold', 22px, 400, '@height', '@spacing', #555555, capitalize, '@decoration');
         margin: 0 0 24px 0;
-    }
-
-    &-title:hover {
-        color: #c7b299;
-        cursor: pointer;
-    }
-
-    &-title:active {
-        color: #555555;
-        cursor: pointer;
     }
 
     &-text {
@@ -326,7 +330,7 @@ body {
         margin: 0;
     }
 
-    &-text:after {
+    &-cart:after {
         content: "";
         display: inline-block;
         border: 3px solid #f1eee9;
@@ -335,17 +339,34 @@ body {
         margin: 30px 0 0 0;
     }
 
-    &-text:hover:after {
+    &-cart:hover:after {
         border: 3px solid #c7b299;
     }
 
-    &-text:active:after {
+    &-cart:active:after {
         border: 3px solid #555555;
     }
 }
 
+.services-cart:hover .services-icon {
+    fill: #c7b299;
+}
+
+.services-cart:hover .services-title {
+    color: #c7b299;
+}
+
+.services-cart:active .services-icon {
+    fill: #555555;
+}
+
+.services-cart:active .services-title {
+    color: #555555;
+}
+
 .realization {
     width: 1230px;
+    min-height: 617px;
     margin: 83px 345px 0 345px;
     text-align: center;
     position: relative;
@@ -364,22 +385,29 @@ body {
 
     &-img1 {
         position: absolute;
-        left: 0px;
-        right: 0px;
-        top: 235px;
-        bottom: 0px;
-        z-index: -1;
+        left: 0;
+        right: 0;
+        top: 245px;
+        bottom: 0;
+        z-index: -2;
     }
 
-    &-img2 {}
+    &-img2 {
+        position: absolute;
+        left: 230px;
+        right: 0;
+        bottom: 0;
+        top: 165px;
+        z-index: -1;
+    }
 
     &-img3 {
         position: absolute;
         left: 460px;
-        right: 0px;
-        bottom: 0px;
-        top: 235px;
-        z-index: -1;
+        right: 0;
+        bottom: 0;
+        top: 245px;
+        z-index: -2;
     }
 }
 
