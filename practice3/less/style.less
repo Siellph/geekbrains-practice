@@ -126,7 +126,7 @@ body {
 }
 
 .logo:hover .logo-icon {
-    fill: #C7B299;
+    fill: #c7b299;
 }
 
 .logo:active .logo-name {
@@ -649,8 +649,7 @@ body {
     box-sizing: border-box;
     background-color: #fbfaf8;
     position: relative;
-    transition: color .3s ease-out,
-        background-color .3s ease-out;
+    transition: background-color .3s ease-out;
 
     &:before {
         content: "";
@@ -666,12 +665,14 @@ body {
         display: block;
         .text-style('Raleway', 20px, 500, '@height', '@spacing', #c7b299, capitalize, '@decoration');
         text-align: left;
+        transition: color .3s ease-out;
     }
 
     &-txt {
         display: block;
         .text-style('Montserrat', 14px, 300, 20px, '@spacing', #d1d1d1, capitalize, '@decoration');
         text-align: left;
+        transition: color .3s ease-out;
     }
 }
 
@@ -690,10 +691,14 @@ body {
 
 .video-block {
     width: 100%;
-    margin: 0;
+    margin: 0 0 80px 0;
     padding: 0;
     box-sizing: border-box;
     position: relative;
+}
+
+video {
+    vertical-align: bottom;
 }
 
 .video {
@@ -704,7 +709,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     position: absolute;
     top: 0;
     left: 0;
@@ -715,8 +719,24 @@ body {
         margin: 0 0 45px 0;
         border-radius: 50%;
         border-color: transparent;
-        background-color: #000;
-        opacity: 0.2;
+        background-color: rgba(0, 0, 0, .2);
+    }
+
+    &-play {
+        fill: #fff;
+        transition: fill .3s ease-out;
+    }
+
+    &-button:hover &-play {
+        cursor: pointer;
+        fill: #c7b299;
+        ;
+    }
+
+    &-button:active &-play {
+        cursor: pointer;
+        fill: #fff;
+        ;
     }
 
     &-title {
