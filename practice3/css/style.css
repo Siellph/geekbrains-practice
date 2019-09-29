@@ -82,7 +82,7 @@ body {
 }
 .logo {
   width: 185px;
-  margin: 0 220px 0 350px;
+  margin: 0 220px 0 228px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -196,6 +196,7 @@ body {
   background-position: right;
   border-radius: 10px;
   border-color: transparent;
+  outline: none;
   transition: width 1s ease-out, background-color 1s ease-out;
 }
 .search-input:hover {
@@ -751,12 +752,14 @@ video {
   width: 100px;
   height: 100px;
   margin: 0 0 45px 0;
+  outline: none;
   border-radius: 50%;
   border-color: transparent;
   background-color: rgba(0, 0, 0, 0.2);
 }
 .video-play {
   fill: #fff;
+  outline: none;
   transition: fill 0.3s ease-out;
 }
 .video-button:hover .video-play {
