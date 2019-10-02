@@ -156,6 +156,7 @@ body {
 .button-cart {
   border: none;
   background-color: transparent;
+  outline: none;
 }
 .icon-cart {
   fill: #fff;
