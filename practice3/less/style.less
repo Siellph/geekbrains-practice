@@ -633,3 +633,48 @@ video {
         .text-style('Montserrat', 14px, 400, 24px, '@spacing', #c7b299, '@transform', '@decoration');
     }
 }
+.mobile {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    &-img {
+        display: block;
+        width: 423px;
+    }
+    &-title {
+        width: 407px;
+        .text-style('Raleway-SemiBold', 30px, 400, '@height', '@spacing', #555, '@transform', '@decoration');
+        padding: 0;
+        margin: 0 0 40px 0;
+    }
+    &-txt {
+        width: 657px;
+        text-align: justify;
+        .text-style('Montserrat', 16px, 300, 28px, '@spacing', #8c8c8c, '@transform', '@decoration');
+        padding: 0;
+        margin: 0 0 45px 0;
+    }
+    &-list {
+        width: 600px;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    &-data {
+        .text-style('Montserrat', 16px, 300, 32px, '@spacing', #8c8c8c, '@transform', '@decoration');
+        position: relative;
+        padding: 0 0 0 30px;
+    }
+    &-data:before {
+        content: "";
+        display: block;
+        width: 21px;
+        height: 21px;
+        background-image: url(../img/icon-list.png);
+        position: absolute;
+        left: 0;
+        top: 4px;
+    }
+}

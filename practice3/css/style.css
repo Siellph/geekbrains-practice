@@ -805,3 +805,69 @@ video {
   text-transform: '@transform';
   text-decoration: '@decoration';
 }
+.mobile {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.mobile-img {
+  display: block;
+  width: 423px;
+}
+.mobile-title {
+  width: 407px;
+  font-family: 'Raleway-SemiBold';
+  font-size: 30px;
+  font-weight: 400;
+  line-height: '@height';
+  letter-spacing: '@spacing';
+  color: #555555;
+  text-transform: '@transform';
+  text-decoration: '@decoration';
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+.mobile-txt {
+  width: 657px;
+  text-align: justify;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: '@spacing';
+  color: #8c8c8c;
+  text-transform: '@transform';
+  text-decoration: '@decoration';
+  padding: 0;
+  margin: 0 0 45px 0;
+}
+.mobile-list {
+  width: 600px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.mobile-data {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: '@spacing';
+  color: #8c8c8c;
+  text-transform: '@transform';
+  text-decoration: '@decoration';
+  position: relative;
+  padding: 0 0 0 30px;
+}
+.mobile-data:before {
+  content: "";
+  display: block;
+  width: 21px;
+  height: 21px;
+  background-image: url(../img/icon-list.png);
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
