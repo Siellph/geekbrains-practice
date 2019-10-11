@@ -1070,6 +1070,18 @@ video {
   top: 4px;
   left: 85px;
 }
+.recent-post-block-more:hover {
+  color: #fff;
+}
+.recent-post-block-more:active {
+  color: #c7b299;
+}
+.recent-post-block-more:hover:after {
+  border-left-color: #fff;
+}
+.recent-post-block-more:active:after {
+  border-left-color: #c7b299;
+}
 .partners {
   width: 100%;
   box-sizing: border-box;
@@ -1082,6 +1094,9 @@ video {
 }
 .main-footer {
   width: 100%;
+  box-sizing: border-box;
+}
+.main-footer-block1 {
   padding: 80px 375px;
   box-sizing: border-box;
   background-color: #191919;
@@ -1116,11 +1131,16 @@ video {
   color: #d1d1d1;
   text-transform: capitalize;
   text-decoration: none;
-  display: block;
   margin: 0 0 33px 30px;
   position: relative;
   margin: 0;
   padding: 0;
+}
+.waxom-info-more:hover {
+  color: #c7b299;
+}
+.waxom-info-more:active {
+  color: #fff;
 }
 .waxom-info-more:after {
   content: "";
@@ -1131,6 +1151,12 @@ video {
   border-left: 5px solid #d1d1d1;
   top: 4px;
   left: 85px;
+}
+.waxom-info-more:hover:after {
+  border-left-color: #c7b299;
+}
+.waxom-info-more:active:after {
+  border-left-color: #fff;
 }
 .footer-block-title {
   font-family: 'Raleway';
@@ -1156,8 +1182,16 @@ video {
   text-decoration: none;
   margin: 0 0 20px 0;
   padding: 0;
-  border: 1px solid transparent;
   border-bottom: 1px solid #252525;
+}
+.recent-footer-txt:last-child {
+  border-bottom: none;
+}
+.recent-footer-txt:hover .recent-footer-txt-date {
+  color: #fff;
+}
+.recent-footer-txt:hover .recent-footer-txt-text {
+  color: #c7b299;
 }
 .recent-footer-txt-date {
   font-family: 'Montserrat';
@@ -1186,6 +1220,46 @@ video {
 .our-twitter {
   width: 270px;
 }
+.our-twitter-text {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: '@spacing';
+  color: #555555;
+  text-transform: '';
+  text-decoration: '@decoration';
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+.our-twitter-text-hour {
+  font-family: 'Montserrat';
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: '@spacing';
+  color: #363636;
+  text-transform: '';
+  text-decoration: '@decoration';
+  margin: 0 0 20px 0;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid #252525;
+}
+.our-twitter-text-hour:last-child {
+  border-bottom: none;
+}
+.our-twitter-text-link {
+  color: #00bff3;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+.our-twitter-text-site {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #959595;
+}
 .drible {
   width: 270px;
 }
@@ -1193,4 +1267,79 @@ video {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+.drible-img-widget {
+  margin: 0 0 10px 0;
+}
+.main-footer-block2 {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 45px 375px;
+  background-color: #111;
+  display: flex;
+  justify-content: space-between;
+}
+.main-footer-block2-menu {
+  display: flex;
+  justify-content: space-between;
+}
+.main-footer-block2-menu-left {
+  font-family: 'Montserrat';
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: '@spacing';
+  color: #555555;
+  text-transform: capitalize;
+  text-decoration: none;
+  margin: 0;
+  padding: 0 10px 0 0;
+  border-right: 1px solid #252525;
+}
+.main-footer-block2-menu-left:last-child {
+  border-right: none;
+}
+.main-footer-block2-menu-left-name {
+  text-decoration: none;
+  color: #959595;
+}
+.main-footer-block2-menu-left-name:hover {
+  color: #c7b299;
+}
+.main-footer-block2-menu-left-name:active {
+  color: #fff;
+}
+.main-footer-block2-menu-right {
+  font-family: 'Montserrat';
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: '@spacing';
+  color: #555555;
+  text-transform: '@transform';
+  text-decoration: '@decoration';
+  margin: 0;
+  padding: 0 9px 0 0;
+  border-right: 1px solid #252525;
+}
+.main-footer-block2-menu-right:last-child {
+  border-right: none;
+}
+.main-footer-block2-menu-link {
+  color: #959595;
+}
+.left {
+  width: 400px;
+}
+.right {
+  width: 330px;
+}
+.footer-block2-link {
+  text-decoration: none;
+}
+.footer-block2-link:hover {
+  color: #c7b299;
+}
+.footer-block2-link:active {
+  color: #fff;
 }
