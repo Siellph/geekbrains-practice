@@ -638,6 +638,7 @@ video {
     box-sizing: border-box;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     &-img {
         display: block;
@@ -647,18 +648,18 @@ video {
         width: 407px;
         .text-style('Raleway-SemiBold', 30px, 400, '@height', '@spacing', #555, '@transform', '@decoration');
         padding: 0;
-        margin: 0 0 40px 0;
+        margin: 0 0 40px 30px;
     }
     &-txt {
         width: 657px;
         text-align: justify;
         .text-style('Montserrat', 16px, 300, 28px, '@spacing', #8c8c8c, '@transform', '@decoration');
         padding: 0;
-        margin: 0 0 45px 0;
+        margin: 0 0 45px 30px;
     }
     &-list {
         width: 600px;
-        margin: 0;
+        margin: 0 0 0 80px;
         padding: 0;
         list-style-type: none;
     }
@@ -676,5 +677,354 @@ video {
         position: absolute;
         left: 0;
         top: 4px;
+    }
+}
+.counters {
+    width: 100%;
+    padding: 70px 500px;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #f4f5f8;
+    background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+    display: flex;
+    justify-content: space-between;
+    &-block {
+        text-align: center;
+    }
+    &-block:after {
+        content: "";
+        width: 30px;
+        display: block;
+        border: 1px solid #fff;
+        margin: auto;
+    }
+    &-icon {
+        fill: #c7b299;
+        margin: 0 0 30px 0;
+    }
+    &-num {
+        .text-style('Montserrat-UltraLight', 48px, 400, 36px, '@spacing', #fff, '@transform', '@decoration');
+        padding: 0;
+        margin: 0 0 21px 0;
+    }
+    &-text {
+        .text-style('Montserrat', 14px, 300, 20px, '@spacing', #c7b299, uppercase, '@decoration');
+        padding: 0;
+        margin: 0 0 30px 0;
+    }
+}
+.recent {
+    width: 100%;
+    padding: 80px 375px;
+    box-sizing: border-box;
+    text-align: center;
+    &-title {
+        .text-style('Raleway-SemiBold', 30px, 400, '@height', '@spacing', #555, capitalize, '@decoration');
+        margin: 0 0 30px 0;
+    }
+    &-txt {
+        .text-style('Montserrat', 16px, 300, 28px, '@spacing', #8c8c8c, '@transform', '@decoration');
+        width: 757px;
+        margin: 0 auto 40px;
+    }
+    &-post {
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: left;
+        &-block {
+            width: 370px;
+            position: relative;
+            &:hover {
+                background-color: #362f2d;
+            }
+            &:hover &-date {
+                background-color: #c7b299;
+            }
+            &:hover &-month {
+                background-color: #a48d72;
+            }
+            &:hover .recent-post-image {
+                filter: brightness(50%);
+            }
+            &:hover &-title {
+                color: #c7b299;
+            }
+            &:hover &-text {
+                color: #fff;
+            }
+            &-date {
+                .text-style('Montserrat', 24px, 300, 20px, '@spacing', #fff, '@transform', '@decoration');
+                text-align: center;
+                width: 50px;
+                padding: 9px 0;
+                display: block;
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                border-radius: 3px 3px 0 0;
+                background-color: #363636;
+                z-index: 3;
+            }
+            &-month {
+                .text-style('Roboto', '12px', '400', 20px, '@spacing', #fff, capitalize, '@decoration');
+                text-align: center;
+                width: 50px;
+                padding: 7px 0;
+                display: block;
+                position: absolute;
+                top: 55px;
+                left: 20px;
+                border-radius: 0 0 3px 3px;
+                background-color: #252525;
+                z-index: 3;
+            }
+            &-image {
+                width: 100%;
+                display: block;
+                box-sizing: border-box;
+                vertical-align: bottom;
+            }
+            &-title {
+                .text-style('Raleway', 20px, 500, '@height', '@spacing', #555, '@transform', '@decoration');
+                margin: 30px 0 19px 30px;
+            }
+            &-text {
+                .text-style('Montserrat', 14px, 300, 22px, '@spacing', #8c8c8c, '@transform', '@decoration');
+                margin: 0 0 27px 30px;
+            }
+            &-more {
+                .text-style('Montserrat', 14px, 300, 20px, '@spacing', #c7b299, capitalize, none);
+                display: block;
+                margin: 0 0 33px 30px;
+                position: relative;
+                &:after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 5px;
+                    border: 5px solid transparent;
+                    border-left: 5px solid #c7b299;
+                    top: 4px;
+                    left: 85px;
+                }
+                &:hover {
+                    color: #fff;
+                }
+                &:active {
+                    color: #c7b299;
+                }
+                &:hover:after {
+                    border-left-color: #fff;
+                }
+                &:active:after {
+                    border-left-color: #c7b299;
+                }
+            }
+        }
+    }
+}
+.partners {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 140px 405px;
+    background-image: url(../img/back-partner.png);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 0 600px rgba(0, 0, 0, 0.66) inset;
+    &-image {}
+}
+.main-footer {
+    width: 100%;
+    box-sizing: border-box;
+}
+.main-footer-block1 {
+    padding: 80px 375px;
+    box-sizing: border-box;
+    background-color: #191919;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.waxom-info {
+    width: 258px;
+    &-logo {
+        margin: 0 0 30px 0;
+    }
+    &-txt {
+        .text-style('Montserrat', 14px, 300, 24px, '@spacing', #555, '', none);
+        margin: 0 0 30px 0;
+        padding: 0;
+    }
+    &-more {
+        .text-style('Montserrat', 14px, 300, 20px, '@spacing', #d1d1d1, capitalize, none);
+        margin: 0 0 33px 30px;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        &:hover {
+            color: #c7b299;
+        }
+        &:active {
+            color: #fff;
+        }
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 5px;
+            border: 5px solid transparent;
+            border-left: 5px solid #d1d1d1;
+            top: 4px;
+            left: 85px;
+        }
+        &:hover:after {
+            border-left-color: #c7b299;
+        }
+        &:active:after {
+            border-left-color: #fff;
+        }
+    }
+}
+.footer-block-title {
+    .text-style('Raleway', 24px, 700, '@height', '@spacing', #fff, capitalize, '@decoration');
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin: 0 0 30px 0;
+}
+.recent-footer {
+    width: 270px;
+    &-title {}
+    &-txt {
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+        text-decoration: none;
+        margin: 0 0 20px 0;
+        padding: 0;
+        border-bottom: 1px solid #252525;
+        &:last-child {
+            border-bottom: none;
+        }
+        &:hover &-date {
+            color: #fff;
+        }
+        &:hover &-text {
+            color: #c7b299;
+        }
+        &-date {
+            .text-style('Montserrat', 12px, 300, 20px, '@spacing', #363636, capitalize, '@decoration');
+            margin: 0 0 10px 0;
+            padding: 0;
+        }
+        &-text {
+            .text-style('Montserrat', 14px, 300, 20px, '@spacing', #555, '', '@decoration');
+            margin: 0 0 20px 0;
+            padding: 0;
+        }
+    }
+}
+.our-twitter {
+    width: 270px;
+    &-title {}
+    &-text {
+        .text-style('Montserrat', 14px, 300, 20px, '@spacing', #555, '', '@decoration');
+        margin: 0 0 10px 0;
+        padding: 0;
+        &-hour {
+            .text-style('Montserrat', 12px, 300, 20px, '@spacing', #363636, '', '@decoration');
+            margin: 0 0 20px 0;
+            padding: 0 0 20px 0;
+            border-bottom: 1px solid #252525;
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+        &-link {
+            color: #00bff3;
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+        }
+        &-site {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            color: #959595;
+        }
+    }
+}
+.drible {
+    width: 270px;
+    &-title {}
+    &-img {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &-widget {
+            margin: 0 0 10px 0;
+        }
+    }
+}
+.main-footer-block2 {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 45px 375px;
+    background-color: #111;
+    display: flex;
+    justify-content: space-between;
+    &-menu {
+        display: flex;
+        justify-content: space-between;
+        &-left {
+            .text-style('Montserrat', 13px, 300, 20px, '@spacing', #555, capitalize, none);
+            margin: 0;
+            padding: 0 10px 0 0;
+            border-right: 1px solid #252525;
+            &:last-child {
+                border-right: none;
+            }
+            &-name {
+                text-decoration: none;
+                color: #959595;
+                &:hover {
+                    color: #c7b299;
+                }
+                &:active {
+                    color: #fff;
+                }
+            }
+        }
+        &-right {
+            .text-style('Montserrat', 13px, 300, 20px, '@spacing', #555, '@transform', '@decoration');
+            margin: 0;
+            padding: 0 9px 0 0;
+            border-right: 1px solid #252525;
+            &:last-child {
+                border-right: none;
+            }
+        }
+        &-link {
+            color: #959595;
+        }
+    }
+}
+.left {
+    width: 400px;
+}
+.right {
+    width: 330px;
+}
+.footer-block2-link {
+    text-decoration: none;
+    &:hover {
+        color: #c7b299;
+    }
+    &:active {
+        color: #fff;
     }
 }
